@@ -6,8 +6,18 @@
     <description>Recent content on PanzerSpeaks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Feb 2016 13:48:33 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2016 15:03:26 -0800</lastBuildDate>
     <atom:link href="http://apanzerj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Photography</title>
+      <link>http://apanzerj.github.io/project/photography/</link>
+      <pubDate>Wed, 24 Feb 2016 15:03:26 -0800</pubDate>
+      
+      <guid>http://apanzerj.github.io/project/photography/</guid>
+      <description>&lt;p&gt;This is the future home for my photos and shit.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>My Haircut</title>

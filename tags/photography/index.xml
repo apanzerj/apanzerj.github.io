@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photography on PanzerSpeaks</title>
+    <link>http://apanzerj.github.io/tags/photography/</link>
+    <description>Recent content in Photography on PanzerSpeaks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Feb 2016 15:03:26 -0800</lastBuildDate>
+    <atom:link href="http://apanzerj.github.io/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Photography</title>
+      <link>http://apanzerj.github.io/project/photography/</link>
+      <pubDate>Wed, 24 Feb 2016 15:03:26 -0800</pubDate>
+      
+      <guid>http://apanzerj.github.io/project/photography/</guid>
+      <description>&lt;p&gt;This is the future home for my photos and shit.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
