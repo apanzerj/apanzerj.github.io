@@ -11,7 +11,6 @@
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="http://apanzerj.github.io/css/normalize.css">
-        <link rel="stylesheet" href="http://apanzerj.github.io/css/highlight.css">
         <link rel="stylesheet" href="http://apanzerj.github.io/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -128,9 +127,8 @@
 
 <p>I wrote a deploy script that uses two copies of the same repo for hugo so that deploying is super easy.</p>
 
-<pre class='line-numbers language-bash' data-src='plugins/line-numbers/prism-line-numbers.css'>
-  <code>
-  hugo
+<pre class='line-numbers' data-src='plugins/line-numbers/prism-line-numbers.js'>
+  <code class='language-bash'>hugo
   git add ./
   git commit -m 'deploy - source update'
   git push
@@ -138,9 +136,12 @@
   cd ../apanzerj.github.io
   git add ./
   git commit -m 'deploy - generated site update'
-  git push
-  </code>
+  git push</code>
 </pre>
+
+<h1 id="prism-js-and-ghostwriter-theme:8cec431ed476dcb92fe2c344a70f6754">Prism.js and Ghostwriter Theme</h1>
+
+<p>Ghostwriter appears to have highlight.css which breaks the line numbering in the above. Oh well. Removing highlight.css fixed the issue.</p>
 
 </div>
 

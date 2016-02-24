@@ -48,9 +48,8 @@
 
 &lt;p&gt;I wrote a deploy script that uses two copies of the same repo for hugo so that deploying is super easy.&lt;/p&gt;
 
-&lt;pre class=&#39;line-numbers language-bash&#39; data-src=&#39;plugins/line-numbers/prism-line-numbers.css&#39;&gt;
-  &lt;code&gt;
-  hugo
+&lt;pre class=&#39;line-numbers&#39; data-src=&#39;plugins/line-numbers/prism-line-numbers.js&#39;&gt;
+  &lt;code class=&#39;language-bash&#39;&gt;hugo
   git add ./
   git commit -m &#39;deploy - source update&#39;
   git push
@@ -58,9 +57,12 @@
   cd ../apanzerj.github.io
   git add ./
   git commit -m &#39;deploy - generated site update&#39;
-  git push
-  &lt;/code&gt;
+  git push&lt;/code&gt;
 &lt;/pre&gt;
+
+&lt;h1 id=&#34;prism-js-and-ghostwriter-theme:8cec431ed476dcb92fe2c344a70f6754&#34;&gt;Prism.js and Ghostwriter Theme&lt;/h1&gt;
+
+&lt;p&gt;Ghostwriter appears to have highlight.css which breaks the line numbering in the above. Oh well. Removing highlight.css fixed the issue.&lt;/p&gt;
 </description>
     </item>
     
