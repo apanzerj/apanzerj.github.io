@@ -2,7 +2,7 @@
 author = "Adam Panzer"
 date = "2016-02-24T10:16:33-08:00"
 description = "Just testing a deploy script..."
-tags = [test deploy script]
+tags = ['test', 'deploy', 'script']
 title = "My Second Post"
 
 +++
