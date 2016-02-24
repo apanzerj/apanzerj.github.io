@@ -12,8 +12,8 @@ theme = "ghostwriter"
 
 [Params]
     intro = true
-    headline = "My headline"
-    description = "My description"
+    headline = "All The Things"
+    description = "If you are tired of listening to me talk, think of this as the cliff notes."
     github = "https://github.com/apanzerj"
     linkedin = "https://www.linkedin.com/in/apanzerj"
     twitter = "https://twitter.com/apanzerj"
