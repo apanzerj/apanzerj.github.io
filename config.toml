@@ -1,4 +1,4 @@
-baseurl = "http://apanzerj.github.io"
+baseurl = "http://apanzerj.github.io/"
 languageCode = "en-us"
 title = "PanzerSpeaks"
 theme = "ghostwriter"
