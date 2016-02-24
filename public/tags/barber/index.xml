@@ -15,9 +15,52 @@
       <pubDate>Wed, 24 Feb 2016 13:48:33 -0800</pubDate>
       
       <guid>http://apanzerj.github.io/2016/02/24/haircut/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://apanzerj.github.io/images/posts/2016/02/24/haircut.jpg&#34; alt=&#34;My Hair&#34; /&gt;&lt;/p&gt;
+      <description>
+
+&lt;h1 id=&#34;first-hugo-post:8cec431ed476dcb92fe2c344a70f6754&#34;&gt;First Hugo Post&lt;/h1&gt;
+
+&lt;p&gt;Special thanks to &lt;a href=&#34;http://onethingwell.org&#34;&gt;OneThingWell&lt;/a&gt; for the insight to use Hugo for a static blog. This is pretty cool.&lt;/p&gt;
+
+&lt;p&gt;I have no idea what I&amp;rsquo;m going to use this for at the moment. Maybe just notes?&lt;/p&gt;
+
+&lt;p&gt;Shit I&amp;rsquo;ve Enjoyed Recently:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tomdalling.com/blog/ruby/pure-function-as-an-object-PFAAO-pattern/&#34;&gt;The Pure Function As An Object (PFAAO) Ruby Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.specto.io/blog/hoverfly-meetup-api.html&#34;&gt;Building software against the meetup API whilst 20,000ft above the North Sea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pfaao-ruby-pattern:8cec431ed476dcb92fe2c344a70f6754&#34;&gt;PFAAO Ruby Pattern&lt;/h2&gt;
+
+&lt;p&gt;I really enjoyed reading this as it gave me some insight into a pattern I&amp;rsquo;ve seen a lot but never fully understood. I&amp;rsquo;ve decided to use this in an upcoming project where I will need to use a very very limited amount (ie: 2 endpoints) of a remote API. I&amp;rsquo;ll have an object that is literally: FooClient.register! and FooClient.deregister!&lt;/p&gt;
+
+&lt;h2 id=&#34;hoverfly-spectolabs:8cec431ed476dcb92fe2c344a70f6754&#34;&gt;HoverFly (SpectoLabs)&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m interested in seeing what we can do with this tool in the longrun when it comes to testing and simulating API&amp;rsquo;s for internal services in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Service-oriented_architecture&#34;&gt;SOA&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&#34;haircut:8cec431ed476dcb92fe2c344a70f6754&#34;&gt;Haircut!&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://apanzerj.github.io/images/posts/2016/02/24/haircut.jpg&#34; alt=&#34;My Hair&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Wooo&lt;/p&gt;
+
+&lt;h1 id=&#34;deploy-script:8cec431ed476dcb92fe2c344a70f6754&#34;&gt;Deploy Script&lt;/h1&gt;
+
+&lt;p&gt;I wrote a deploy script that uses two copies of the same repo for hugo so that deploying is super easy.&lt;/p&gt;
+
+&lt;pre class=&#39;line-numbers language-bash&#39; data-src=&#39;plugins/line-numbers/prism-line-numbers.css&#39;&gt;
+  &lt;code&gt;
+  hugo
+  git add ./
+  git commit -m &#39;deploy - source update&#39;
+  git push
+  cp -r ./public/ ../apanzerj.github.io
+  cd ../apanzerj.github.io
+  git add ./
+  git commit -m &#39;deploy - generated site update&#39;
+  git push
+  &lt;/code&gt;
+&lt;/pre&gt;
 </description>
     </item>
     

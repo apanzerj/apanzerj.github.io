@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="http://apanzerj.github.io/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href="/css/prism.css">
     </head>
     <body>
         
@@ -85,7 +86,7 @@
         <span>by</span>
         <span itemscope="" itemprop="author" itemtype="http://schema.org/Person">
             <span itemprop="name">
-                <a href="https://google.com/&#43;XXX" itemprop="url" rel="author">Adam Panzer</a>
+                <a href="" itemprop="url" rel="author">Adam Panzer</a>
             </span>
         </span>
     </p>
@@ -94,9 +95,52 @@
         <div class="post-content clearfix" itemprop="articleBody">
     
 
-    <p><img src="/images/posts/2016/02/24/haircut.jpg" alt="My Hair" /></p>
+    
+
+<h1 id="first-hugo-post:8cec431ed476dcb92fe2c344a70f6754">First Hugo Post</h1>
+
+<p>Special thanks to <a href="http://onethingwell.org">OneThingWell</a> for the insight to use Hugo for a static blog. This is pretty cool.</p>
+
+<p>I have no idea what I&rsquo;m going to use this for at the moment. Maybe just notes?</p>
+
+<p>Shit I&rsquo;ve Enjoyed Recently:</p>
+
+<ul>
+<li><a href="http://www.tomdalling.com/blog/ruby/pure-function-as-an-object-PFAAO-pattern/">The Pure Function As An Object (PFAAO) Ruby Pattern</a></li>
+<li><a href="http://www.specto.io/blog/hoverfly-meetup-api.html">Building software against the meetup API whilst 20,000ft above the North Sea</a></li>
+</ul>
+
+<h2 id="pfaao-ruby-pattern:8cec431ed476dcb92fe2c344a70f6754">PFAAO Ruby Pattern</h2>
+
+<p>I really enjoyed reading this as it gave me some insight into a pattern I&rsquo;ve seen a lot but never fully understood. I&rsquo;ve decided to use this in an upcoming project where I will need to use a very very limited amount (ie: 2 endpoints) of a remote API. I&rsquo;ll have an object that is literally: FooClient.register! and FooClient.deregister!</p>
+
+<h2 id="hoverfly-spectolabs:8cec431ed476dcb92fe2c344a70f6754">HoverFly (SpectoLabs)</h2>
+
+<p>I&rsquo;m interested in seeing what we can do with this tool in the longrun when it comes to testing and simulating API&rsquo;s for internal services in a <a href="https://en.wikipedia.org/wiki/Service-oriented_architecture">SOA</a>.</p>
+
+<h1 id="haircut:8cec431ed476dcb92fe2c344a70f6754">Haircut!</h1>
+
+<p><img src="/images/posts/2016/02/24/haircut.jpg" alt="My Hair" /></p>
 
 <p>Wooo</p>
+
+<h1 id="deploy-script:8cec431ed476dcb92fe2c344a70f6754">Deploy Script</h1>
+
+<p>I wrote a deploy script that uses two copies of the same repo for hugo so that deploying is super easy.</p>
+
+<pre class='line-numbers language-bash' data-src='plugins/line-numbers/prism-line-numbers.css'>
+  <code>
+  hugo
+  git add ./
+  git commit -m 'deploy - source update'
+  git push
+  cp -r ./public/ ../apanzerj.github.io
+  cd ../apanzerj.github.io
+  git add ./
+  git commit -m 'deploy - generated site update'
+  git push
+  </code>
+</pre>
 
 </div>
 
@@ -167,6 +211,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
         <script src="http://apanzerj.github.io/js/jquery.fitvids.js"></script>
         <script src="http://apanzerj.github.io/js/scripts.js"></script>
+        <script src="/js/prism.js"></script>
     </body>
 </html>
 
