@@ -31,11 +31,10 @@ Wooo
 
 # Deploy Script
 
-I wrote a deploy script that uses two copies of the same repo for hugo so that deploying is super easy. 
+I wrote a deploy script that uses two copies of the same repo for hugo so that deploying is super easy.
 
-<pre class='line-numbers language-bash' data-src='plugins/line-numbers/prism-line-numbers.css'>
-  <code>
-  hugo
+<pre class='line-numbers' data-src='plugins/line-numbers/prism-line-numbers.js'>
+  <code class='language-bash'>hugo
   git add ./
   git commit -m 'deploy - source update'
   git push
@@ -43,6 +42,9 @@ I wrote a deploy script that uses two copies of the same repo for hugo so that d
   cd ../apanzerj.github.io
   git add ./
   git commit -m 'deploy - generated site update'
-  git push
-  </code>
+  git push</code>
 </pre>
+
+# Prism.js and Ghostwriter Theme
+
+Ghostwriter appears to have highlight.css which breaks the line numbering in the above. Oh well. Removing highlight.css fixed the issue.
