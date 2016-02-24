@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PanzerSpeaks</title>
+    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <description>Recent content on PanzerSpeaks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Feb 2016 08:44:12 -0800</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>First Blood: My First Post</title>
+      <link>http://replace-this-with-your-hugo-site.com/2016/02/24/first_blood/</link>
+      <pubDate>Wed, 24 Feb 2016 08:44:12 -0800</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2016/02/24/first_blood/</guid>
+      <description>
+
+&lt;p&gt;Special thanks to &lt;a href=&#34;http://onethingwell.org&#34;&gt;OneThingWell&lt;/a&gt; for the insight to use Hugo for a static blog. This is pretty cool.&lt;/p&gt;
+
+&lt;p&gt;I have no idea what I&amp;rsquo;m going to use this for at the moment. Maybe just notes?&lt;/p&gt;
+
+&lt;p&gt;Shit I&amp;rsquo;ve Enjoyed Recently:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tomdalling.com/blog/ruby/pure-function-as-an-object-PFAAO-pattern/&#34;&gt;The Pure Function As An Object (PFAAO) Ruby Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.specto.io/blog/hoverfly-meetup-api.html&#34;&gt;Building software against the meetup API whilst 20,000ft above the North Sea&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;pfaao-ruby-pattern:fd64b35c9bf3f168f19fb3ea7ce52b84&#34;&gt;PFAAO Ruby Pattern&lt;/h2&gt;
+
+&lt;p&gt;I really enjoyed reading this as it gave me some insight into a pattern I&amp;rsquo;ve seen a lot but never fully understood. I&amp;rsquo;ve decided to use this in an upcoming project where I will need to use a very very limited amount (ie: 2 endpoints) of a remote API. I&amp;rsquo;ll have an object that is literally: FooClient.register! and FooClient.deregister!&lt;/p&gt;
+
+&lt;h2 id=&#34;hoverfly-spectolabs:fd64b35c9bf3f168f19fb3ea7ce52b84&#34;&gt;HoverFly (SpectoLabs)&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m interested in seeing what we can do with this tool in the longrun when it comes to testing and simulating API&amp;rsquo;s for internal services in a &lt;a href=&#34;https://en.wikipedia.org/wiki/Service-oriented_architecture&#34;&gt;SOA&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
