@@ -16,6 +16,7 @@ theme = "ghostwriter"
     github = "https://github.com/apanzerj"
     linkedin = "https://www.linkedin.com/in/apanzerj"
     twitter = "https://twitter.com/apanzerj"
+    author = "Adam Panzer"
 
 [Permalinks]
     post = "/:year/:month/:day/:filename/"
