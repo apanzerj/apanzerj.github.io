@@ -98,7 +98,9 @@
 
 <p>Parsing log files for a client I need to find anyone making a POST and count how often they do it:</p>
 
-<p>zcat access.log.{2,3,4,5,6,7} | grep &ldquo;POST&rdquo; | awk -F - &lsquo;{ print $1 }&rsquo; | sort | uniq -c</p>
+<pre class='line-numbers' data-src='plugins/line-numbers/prism-line-numbers.js'>
+  <code class='language-bash'>zcat access.log.{2,3,4,5,6,7} | grep "POST" | awk -F - '{ print $1 }' | sort | uniq -c </code>
+  </pre>
 
 </div>
 

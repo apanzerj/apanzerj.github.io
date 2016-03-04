@@ -21,7 +21,9 @@
 
 &lt;p&gt;Parsing log files for a client I need to find anyone making a POST and count how often they do it:&lt;/p&gt;
 
-&lt;p&gt;zcat access.log.{2,3,4,5,6,7} | grep &amp;ldquo;POST&amp;rdquo; | awk -F - &amp;lsquo;{ print $1 }&amp;rsquo; | sort | uniq -c&lt;/p&gt;
+&lt;pre class=&#39;line-numbers&#39; data-src=&#39;plugins/line-numbers/prism-line-numbers.js&#39;&gt;
+  &lt;code class=&#39;language-bash&#39;&gt;zcat access.log.{2,3,4,5,6,7} | grep &#34;POST&#34; | awk -F - &#39;{ print $1 }&#39; | sort | uniq -c &lt;/code&gt;
+  &lt;/pre&gt;
 </description>
     </item>
     

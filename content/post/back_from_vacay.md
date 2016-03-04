@@ -13,4 +13,6 @@ Note:
 
 Parsing log files for a client I need to find anyone making a POST and count how often they do it:
 
-zcat access.log.{2,3,4,5,6,7} | grep "POST" | awk -F - '{ print $1 }' | sort | uniq -c
+<pre class='line-numbers' data-src='plugins/line-numbers/prism-line-numbers.js'>
+  <code class='language-bash'>zcat access.log.{2,3,4,5,6,7} | grep "POST" | awk -F - '{ print $1 }' | sort | uniq -c </code>
+  </pre>
