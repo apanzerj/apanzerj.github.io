@@ -6,8 +6,40 @@
     <description>Recent content in Posts on PanzerSpeaks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Mar 2016 10:06:05 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Mar 2016 08:59:37 -0700</lastBuildDate>
     <atom:link href="http://apanzerj.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>lambda</title>
+      <link>http://apanzerj.github.io/2016/03/21/lambda/</link>
+      <pubDate>Mon, 21 Mar 2016 08:59:37 -0700</pubDate>
+      
+      <guid>http://apanzerj.github.io/2016/03/21/lambda/</guid>
+      <description>&lt;p&gt;I have been playing around with the Alexa Skills Kit and have had a lot of fun. This is the script I use to deploy my code to a lambda. Saves me a lot of time:&lt;/p&gt;
+
+&lt;pre class=&#39;line-numbers&#39; data-src=&#39;plugins/line-numbers/prism-line-numbers.js&#39;&gt;
+  &lt;code class=&#39;language-bash&#39;&gt;#!/bin/bash
+TS=$(date +&#34;%F.%s&#34;)
+zip -r  $TS.zip AlexaSkill.js index.js [some other files]
+aws s3 cp $TS.zip s3://ajp.lambda
+aws lambda --region us-east-1 update-function-code --function-name funky --s3-bucket [bucket] --s3-key $TS.zip&lt;/code&gt;
+  &lt;/pre&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently playing with the Zendesk API and Alexa but I&amp;rsquo;m at loss for things I can do because of the limited parameters you are allowed to pass.&lt;/p&gt;
+
+&lt;p&gt;Boo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>List top IPs</title>
+      <link>http://apanzerj.github.io/2016/03/17/ufw/</link>
+      <pubDate>Thu, 17 Mar 2016 10:10:56 -0700</pubDate>
+      
+      <guid>http://apanzerj.github.io/2016/03/17/ufw/</guid>
+      <description>&lt;p&gt;cat access.log.1 | grep &amp;ldquo;POST.&lt;em&gt;xml.&lt;/em&gt;&amp;rdquo; | awk -F - &amp;lsquo;{ print $1 }&amp;rsquo; | sort | uniq -c | sort -nr | head | awk &amp;lsquo;{print $2}&amp;rsquo;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Back From Vacay</title>
